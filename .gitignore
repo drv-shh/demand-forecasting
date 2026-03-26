@@ -1,0 +1,11 @@
+# datasets
+*.csv
+
+# model files
+*.pkl
+
+# plots
+*.png
+
+# python cache
+__pycache__/
