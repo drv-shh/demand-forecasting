@@ -1,6 +1,8 @@
 import joblib
 import pandas as pd
 
+
+
 # load trained model
 model = joblib.load("demand_forecast_model.pkl")
 
@@ -19,4 +21,3 @@ sample = pd.DataFrame({
 
 prediction = model.predict(sample)
 
-print("Predicted Sales:", prediction[0])

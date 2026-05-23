@@ -9,7 +9,8 @@ data['date'] = pd.to_datetime(data['date'])
 # Sort by date (VERY IMPORTANT for time series)
 data = data.sort_values(by='date')
 
-data.head()
+print(data.head())
+print(data.info())
 
 #Splitting dataset
 split_index = int(len(data) * 0.8)
